@@ -2,6 +2,7 @@
 /node_modules/
 /dist/
 /public/
+/public2/
 /test/
 /output/
 /_debug/
