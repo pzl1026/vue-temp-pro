@@ -21,8 +21,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "wp-vue dev",
-    "build": "wp-vue prod"
+    "dev": "wp-vr -d test",
+    "build": "wp-vr -b test"
   },
   "author": "",
   "license": "ISC"

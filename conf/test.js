@@ -1,6 +1,6 @@
 module.exports = {
     frame: '',
-    port: '',
+    port: '8081',
     serviceWorker: '',
     outputPath: '',
     mock: true,
