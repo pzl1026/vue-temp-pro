@@ -47,7 +47,7 @@
     "monitorjs": "git+https://github.com/jsyczhanghao/monitorjs.git",
     "qiniu-js": "^2.5.4",
     "sortablejs": "^1.10.1",
-    "tinymce": "5.1.5",
+    "tinymce": "5.4.2",
     "typescript": "^3.8.3",
     "vue": "^2.6.10",
     "vue-amap": "^0.5.10",
