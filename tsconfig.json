@@ -1,0 +1,39 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "typeRoots": ["./types", "./node_modules/vue/types"],
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*", "src/*"],
+      "@/widgets": ["src/widgets*"],
+      "@/components": ["src/components*"],
+      "@/config": ["src/config*"]
+    },
+    "outDir": "./src",
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "allowJs": true,
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "esModuleInterop": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "es7",
+      "es2017",
+      "es2015.promise",
+      "webworker",
+      "scripthost"
+    ],
+    "sourceMap": true,
+    "pretty": true
+  }
+}

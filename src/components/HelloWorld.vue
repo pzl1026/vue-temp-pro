@@ -80,18 +80,30 @@
         </a>
       </li>
     </ul>
+    <ul>
+      <li v-for="item in list" :key="item.id">
+        {{item.name}}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
+import Api from '@/api/test';
 export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+    name: 'HelloWorld',
+    data () {
+        return {
+            msg: 'Welcome to Your Vue.js App',
+            list: []
+        };
+    },
+    created () {
+        Api.getData().then(res => {
+            this.list = res.data.list;
+        });
     }
-  }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
